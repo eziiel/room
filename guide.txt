@@ -1,0 +1,17 @@
+1-components
+	0.0-MainPage
+		-main
+		-section
+	1.1- images
+	1.2- text
+2-utils
+	2.1-btn shop
+	2.1-slide arrow
+3-styled
+	3.1-global
+
+
+
+//Slide
+
+obs....
