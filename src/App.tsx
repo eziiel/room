@@ -1,4 +1,4 @@
-import { MainPage } from "./components";
+import MainPage from "./components";
 import Global from "./styled/Global";
 
 function App() {

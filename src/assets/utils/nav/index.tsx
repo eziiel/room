@@ -1,9 +1,17 @@
 import React from 'react'
+import * as S from "./styled"
+import nav from "../../../../public/json/nav.json"
 
 
 
-export const Nav = () => {
+
+const Nav:React.FC = () => {
+  
   return (
-    <div>Nav</div>
+    <S.NavMenu>
+      nav
+    </S.NavMenu>
   )
 }
+
+export default Nav

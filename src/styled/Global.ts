@@ -5,7 +5,7 @@ const Global = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     border: 0;
     font: inherit;
 
@@ -21,14 +21,11 @@ const Global = createGlobalStyle`
   a{
     text-decoration: none;
   }
-/* 
-  html{
-    min-height: 100vh;
-  } */
 
   body{
     min-height: 100vh;
     background-color: #333;
+    color: #f0f0f0;
   }
   
   #root{
