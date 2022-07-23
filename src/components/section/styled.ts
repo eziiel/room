@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 
 const SectionS = styled.section`
-  
-  min-height: 50vh;
+  flex: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: red;
+  background: yellow;
 `
 
 export {

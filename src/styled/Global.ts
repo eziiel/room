@@ -24,13 +24,13 @@ const Global = createGlobalStyle`
 
   body{
     min-height: 100vh;
-    background-color: #333;
     color: #f0f0f0;
   }
   
   #root{
-    width: 100%;
     min-height: 100vh;
+    min-width: 100%;
+    display: flex;
   }
 
 `

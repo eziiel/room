@@ -5,36 +5,39 @@ interface Move{
   move :string
 }
 
+const Container = styled.div`
+  max-width: 100%;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  position: relative;
+  `
+
 const MainS = styled.main<Move>`
-  min-height: 50vh;
+  height: 100%;
   background-color: red;
   display: flex;
   transform: translate3d(${props => props.move},0,0);
-  max-width: 100%;
 `
 
-const NavSlide = styled.div<Move>`
-  width: 11.66%;
-  height: 80px;
+const NavSlide = styled.div`
+  min-width: 150px;
+  min-height: 70px;
   background: #000;
   left: 1500px;
-  bottom: 0;
   display: flex;
-  justify-content: space-between;
   position: absolute;
-  top: 45vh;
-  left: 55%;
+  bottom: -1px;
+  bottom: 0;
+  left: 60%;
   
   button{
-    width: 45%;
+    flex: 1;
     cursor: pointer;
   }
   `
 
-  const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-  `
 
 export {
   MainS,

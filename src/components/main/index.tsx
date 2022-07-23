@@ -41,15 +41,11 @@ const Main: React.FC = () => {
           ))
         }
       </S.MainS>
-
-        <S.NavSlide
-          move={`-${(move * 5.5) / 100}px`}
-        >
-          <button
-            onClick={handleMoveLeft}>L</button>
-          <button
-            onClick={handleMoveRight}>R</button>
+        <S.NavSlide>
+          <button onClick={handleMoveLeft}>L</button>
+          <button onClick={handleMoveRight}>L</button>
         </S.NavSlide>
+
     </S.Container>
   )
 }

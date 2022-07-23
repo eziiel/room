@@ -12,7 +12,7 @@ export const Slide = ({src,text}:Props) => {
 
   return (
     <S.Div>
-      <img src={src} alt="image slide" />
+        <S.ImgSlide text={src}/>
       <S.P>
         {text}
       </S.P>
