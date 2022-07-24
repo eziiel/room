@@ -10,13 +10,12 @@ const Section:React.FC = () => {
   const [{info}] = data
 
   return (
-      // {info.map((item) => (
     <>
       {info.map(({id,src,title,text}) =>(
         <S.SectionS key={id}>
 
       <C.ImgSlide text={src[0]}></C.ImgSlide>
-        <C.Info>
+        <C.Info text="--font2" fontSize="1.5rem" letterspacing="3px" padding="0 1rem">
           <h1>{title}</h1>
           <p>{text}</p>
         </C.Info>

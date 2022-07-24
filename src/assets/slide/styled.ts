@@ -2,9 +2,16 @@ import styled from "styled-components";
 
 interface Props{
   text :string
+  padding?:string
+  fontSize? :string
+  letterspacing? :string
+  ch?:number
 }
 interface Move{
   move :string
+}
+interface CH {
+  ch:number
 }
 
 const Div = styled.div`
@@ -24,7 +31,7 @@ const ImgSlide = styled.div<Props>`
 
 `
 
-const Info = styled.article`
+const Info = styled.article<Props>`
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -32,14 +39,15 @@ const Info = styled.article`
   align-items: start;
   gap: 2rem;
 
-  width: 80%;
+  width: 90%;
   height: 100%;
-  /* padding: 0 5rem; */
+  padding: ${props => props.padding};
   
   h1{
-    font: bold;
-    font-size: 3rem;
-    max-width: 20ch;
+    font: var(${props => props.text});
+    font-size:${props => props.fontSize};
+    max-width: ${props => props.ch};
+    letter-spacing: ${props => props.letterspacing};
   }
   
   a{
@@ -48,6 +56,7 @@ const Info = styled.article`
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    font: var(--font2);
     letter-spacing: .875rem;
     text-transform: uppercase;
   }

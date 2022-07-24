@@ -6,7 +6,6 @@ interface Props{
   src:string
   text:string
   title:string
-  // src,text,title : string
 }
 
 
@@ -15,7 +14,7 @@ export const Slide = ({src,text,title}:Props) => {
   return (
     <S.Div>
         <S.ImgSlide text={src}/>
-      <S.Info>
+      <S.Info text="--font2" fontSize="3rem" ch={18} padding="0 3rem">
         <h1>{title}</h1>
         <p>{text}</p>
         <a href="#">shop now</a>

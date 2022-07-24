@@ -11,7 +11,12 @@ const Global = createGlobalStyle`
   }
 
   :root{
-    /* font-family: 'Barlow', sans-serif; */
+    //fonts 
+    --font: normal normal 300 1rem 'Barlow', sans-serif;
+    --font1: normal normal 400 1rem 'Barlow', sans-serif;
+    --font2: normal normal 700 1rem 'Barlow', sans-serif;
+
+
   }
 
   img{
@@ -27,7 +32,7 @@ const Global = createGlobalStyle`
 
   body{
     min-height: 100vh;
-    /* color: #f0f0f0; */
+    font-family: 'Barlow', sans-serif;
   }
   
   #root{

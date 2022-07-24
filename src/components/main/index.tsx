@@ -10,6 +10,11 @@ const Main: React.FC = () => {
   const [teste, setTeste] = React.useState<Number | null>()
   const refMove = React.useRef<HTMLDivElement>(null)
 
+  //img for btn
+  let [{assets:{navSet:{setRight}}}] = dataSlide
+  let [{assets:{navSet:{setLeft}}}] = dataSlide
+
+  console.log(dataSlide)
 
 
   React.useEffect(() => {
@@ -41,9 +46,9 @@ const Main: React.FC = () => {
           ))
         }
       </S.MainS>
-        <S.NavSlide>
-          <button onClick={handleMoveLeft}>L</button>
-          <button onClick={handleMoveRight}>L</button>
+        <S.NavSlide >
+          <S.Button backGround={setLeft} onClick={handleMoveLeft}></S.Button >
+          <S.Button backGround={setRight} onClick={handleMoveRight}></S.Button >
         </S.NavSlide>
 
     </S.Container>

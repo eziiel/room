@@ -32,10 +32,16 @@
         "src" :[
           "/images/image-about-dark.jpg",
           "/images/image-about-light.jpg"
-
         ]
       }
-    ]
+    ],
+    "assets":{
+      "navSet" : {
+        "setLeft":"/images/icon-angle-left.svg",
+        "setRight":"/images/icon-angle-right.svg",
+        "arrow":"/images/icon-arrow.svg"
+      }
+    }
 
   }
 ]
