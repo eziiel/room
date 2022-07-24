@@ -8,7 +8,10 @@ const Global = createGlobalStyle`
     box-sizing: border-box;
     border: 0;
     font: inherit;
+  }
 
+  :root{
+    /* font-family: 'Barlow', sans-serif; */
   }
 
   img{
