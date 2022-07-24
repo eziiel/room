@@ -12,7 +12,6 @@ const Div = styled.div`
   flex-shrink: 0;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  background: blue;
   position: relative;
 `
 
@@ -25,14 +24,42 @@ const ImgSlide = styled.div<Props>`
 
 `
 
-const P = styled.p`
-  background: green;
-  max-width: 100%;
+const Info = styled.article`
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+
+  width: 80%;
   height: 100%;
+  /* padding: 0 5rem; */
+  
+  h1{
+    font: bold;
+    font-size: 3rem;
+    max-width: 20ch;
+  }
+  
+  a{
+    display: inline-block;
+    padding: 2;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: .875rem;
+    text-transform: uppercase;
+  }
+  
+  p{
+    max-width: 60ch;
+  }
+
 `
 
 export {
   Div,
-  P,
+  Info,
   ImgSlide,
 }

@@ -7,7 +7,6 @@ const MainPG = styled.div`
   display: grid;
   grid-template-rows: 2fr 1fr;
   overflow: hidden;
-  background: red;
 `
 
 export {

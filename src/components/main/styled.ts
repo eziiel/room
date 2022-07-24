@@ -16,15 +16,13 @@ const Container = styled.div`
 
 const MainS = styled.main<Move>`
   height: 100%;
-  background-color: red;
   display: flex;
   transform: translate3d(${props => props.move},0,0);
 `
 
 const NavSlide = styled.div`
-  min-width: 150px;
-  min-height: 70px;
-  background: #000;
+  width: 6.65%;
+  height: 10%;
   left: 1500px;
   display: flex;
   position: absolute;

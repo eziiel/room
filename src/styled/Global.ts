@@ -24,7 +24,7 @@ const Global = createGlobalStyle`
 
   body{
     min-height: 100vh;
-    color: #f0f0f0;
+    /* color: #f0f0f0; */
   }
   
   #root{

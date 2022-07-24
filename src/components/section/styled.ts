@@ -5,7 +5,7 @@ const SectionS = styled.section`
   flex: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: yellow;
+  /* background: yellow; */
 `
 
 export {

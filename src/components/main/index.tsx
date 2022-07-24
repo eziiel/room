@@ -17,8 +17,7 @@ const Main: React.FC = () => {
   }, [guideSlide])
 
   const handleMoveRight = () => {
-    guideSlide < dataSlide.length-1 && setGuideSlide(guideSlide + 1)
-    console.log(guideSlide)
+    guideSlide < dataSlide[0].slide.length-1 && setGuideSlide(guideSlide + 1)
   }
   const handleMoveLeft = () => {
     guideSlide >= 1 && setGuideSlide(guideSlide - 1)
@@ -32,11 +31,12 @@ const Main: React.FC = () => {
         move={`-${move}px`}
       >
         {
-          dataSlide.map(({ id, src, info }) => (
+          dataSlide[0].slide.map(({ id, src, info, title }) => (
             <Slide
               key={id}
               text={info}
               src={src}
+              title={title}
             />
           ))
         }
