@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 const MainPG = styled.div`
-  width: 100%;
-  min-height: 100%;
-  flex-grow: 1;
-  display: grid;
-  grid-template-rows: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 `
 

@@ -19,16 +19,23 @@ const Div = styled.div`
   flex-shrink: 0;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  position: relative;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
+
 `
 
 const ImgSlide = styled.div<Props>`
   width: 100%;
-  height: 100%;
+  min-height: 250px;
   background: transparent url(${props => props.text}) no-repeat;
   background-size: cover;
   background-position: center;
-
+  
+  @media (max-width: 1100px) {
+    /* height: 300px; */
+  }
 `
 
 const Info = styled.article<Props>`
