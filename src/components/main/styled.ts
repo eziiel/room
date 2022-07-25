@@ -8,8 +8,8 @@ interface Move{
 }
 
 const Container = styled.div`
+  min-height: 70vh;
   width: 100%;
-  flex-grow: 2;
   display: flex;
   flex-direction: column; 
   align-items: center;
@@ -17,10 +17,11 @@ const Container = styled.div`
   `
 
 const MainS = styled.main<Move>`
+  flex: 1;
   width: 100%;
-  height: 100%;
   display: flex;
   transform: translate3d(${props => props.move},0,0);
+  transition: transform .3s ease;
 `
 
 const NavSlide = styled.div`
@@ -33,6 +34,13 @@ const NavSlide = styled.div`
   bottom: 0;
   left: 60%;
   background: #000;
+
+  @media (max-width: 1100px) {
+    left: 85%;
+    width: 15%;
+    right: 0;
+    
+  }
 `
 const Button=styled.button<Props>`
   background: #000 url(${props => props.backGround}) no-repeat center center;

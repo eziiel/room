@@ -15,7 +15,7 @@ const Section:React.FC = () => {
         <S.SectionS key={id}>
 
       <C.ImgSlide text={src[0]}></C.ImgSlide>
-        <C.Info text="--font2" fontSize="1.5rem" letterspacing="3px" padding="0 1rem">
+        <C.Info text="--font2" fontSize="1.5rem" letterspacing="3px" padding="2rem 1rem">
           <h1>{title}</h1>
           <p>{text}</p>
         </C.Info>

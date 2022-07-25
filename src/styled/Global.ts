@@ -15,7 +15,9 @@ const Global = createGlobalStyle`
     --font: normal normal 300 1rem 'Barlow', sans-serif;
     --font1: normal normal 400 1rem 'Barlow', sans-serif;
     --font2: normal normal 700 1rem 'Barlow', sans-serif;
-
+    
+    //small
+    --font-small: normal normal 300 .875rem 'Barlow', sans-serif;
 
   }
 
@@ -30,16 +32,19 @@ const Global = createGlobalStyle`
     text-decoration: none;
   }
 
+  html{
+    height: 100%;
+  }
   body{
-    min-height: 100vh;
+    height: 100%;
     font-family: 'Barlow', sans-serif;
   }
   
-  #root{
+  /* #root{
     min-height: 100vh;
     min-width: 100%;
     display: flex;
-  }
+  } */
 
 `
 

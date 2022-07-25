@@ -5,35 +5,33 @@ import * as S from "./styled"
 
 
 const Main: React.FC = () => {
-  const [guideSlide, setGuideSlide] = React.useState(Number)
+  const [guideSlide, setGuideSlide] = React.useState(0)
   const [move, setMove] = React.useState(0)
-  const [teste, setTeste] = React.useState<Number | null>()
   const refMove = React.useRef<HTMLDivElement>(null)
 
   //img for btn
   let [{assets:{navSet:{setRight}}}] = dataSlide
   let [{assets:{navSet:{setLeft}}}] = dataSlide
 
-  console.log(dataSlide)
-
 
   React.useEffect(() => {
-    refMove.current?.clientWidth && setMove(refMove.current?.clientWidth * guideSlide)
+    refMove.current?.clientWidth && setMove(-(refMove.current?.clientWidth * guideSlide))
   }, [guideSlide])
 
   const handleMoveRight = () => {
-    guideSlide < dataSlide[0].slide.length-1 && setGuideSlide(guideSlide + 1)
+    guideSlide < dataSlide[0].slide.length-1 && setGuideSlide(guideSlide => guideSlide + 1)
   }
   const handleMoveLeft = () => {
-    guideSlide >= 1 && setGuideSlide(guideSlide - 1)
-    setTeste(refMove.current?.clientWidth)
+    guideSlide >= 1 && setGuideSlide(guideSlide => guideSlide - 1)
+    // console.log(refMove.current?.getBoundingClientRect())
+    // console.log(refMove.current?.clientWidth)
   }
 
   return (
     <S.Container>
       <S.MainS
         ref={refMove}
-        move={`-${move}px`}
+        move={`${move}px`}
       >
         {
           dataSlide[0].slide.map(({ id, src, info, title }) => (
