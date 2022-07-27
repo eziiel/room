@@ -14,11 +14,19 @@ const Global = createGlobalStyle`
     //fonts 
     --font: normal normal 300 1rem 'Barlow', sans-serif;
     --font1: normal normal 400 1rem 'Barlow', sans-serif;
-    --font2: normal normal 700 1rem 'Barlow', sans-serif;
+    --font2: normal normal 500 1rem 'Barlow', sans-serif;
+    --font3: normal normal 700 1rem 'Barlow', sans-serif;
     
     //small
     --font-small: normal normal 300 .875rem 'Barlow', sans-serif;
+    --font-small1: normal normal 500 1.125rem 'Barlow', sans-serif;
+    
+    //big
+    --big1: normal normal 700 2rem 'Barlow', sans-serif;
 
+    //colors
+    //white
+    --white:#f1f1f1;
   }
 
   img{
@@ -38,14 +46,9 @@ const Global = createGlobalStyle`
   body{
     height: 100%;
     font-family: 'Barlow', sans-serif;
-  }
-  
-  /* #root{
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-  } */
+    color: #333;
 
+  }
 `
 
 export default Global

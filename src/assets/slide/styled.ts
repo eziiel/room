@@ -49,6 +49,11 @@ const Info = styled.article<Props>`
   width: 90%;
   height: 100%;
   padding: ${props => props.padding};
+
+  
+  @media (max-width: 600px) {
+    padding: 5rem 1rem;
+  }
   
   h1{
     font: var(${props => props.text});
