@@ -8,10 +8,16 @@ import { ContextStatus } from '../../../context'
 
 const Nav:React.FC = () => {
   const {status,setStatus} = React.useContext(ContextStatus)
+  const refDrop = React.useRef<HTMLDivElement>(null)
 
   function handleDrop() {
     setStatus(!status)
   }
+
+  const html = document.documentElement
+  html.addEventListener("click", (e) => {
+    e.target == refDrop.current? null : e.target == refDrop.current?.firstChild?null:setStatus(false)
+  })
 
   return (
     <S.Header>      
@@ -28,6 +34,7 @@ const Nav:React.FC = () => {
       </S.NavMenu>
 
       <S.DropMenu
+        ref={refDrop}
         onClick={handleDrop}>
         <S.Span></S.Span>
         <S.NavDrop status={status}>

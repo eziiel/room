@@ -33,9 +33,6 @@ const ImgSlide = styled.div<Props>`
   background-size: cover;
   background-position: center;
   
-  @media (max-width: 1100px) {
-    /* height: 300px; */
-  }
 `
 
 const Info = styled.article<Props>`
