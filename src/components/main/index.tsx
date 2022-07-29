@@ -16,11 +16,9 @@ const Main: React.FC = () => {
 
   const handleMoveRight = () => {
     setCurrent(current == slide.length -1? 0 : current +1) 
-    console.log(current)
   }
   const handleMoveLeft = () => {
     setCurrent(current == 0 ? slide.length-1 :current - 1) 
-    console.log(current)
   }
 
   return (

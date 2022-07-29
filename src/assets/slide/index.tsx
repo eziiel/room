@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import * as S from "./styled"
-import DataSlide from "../../../public/json/slide.json"
 
 interface Props{
   src:string
