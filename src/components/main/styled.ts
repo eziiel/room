@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 interface Props {
-  backGround:string
+  backGround?:string
 }
 interface Move{
-  move :string
+  move? :string
 }
 
 const Container = styled.div`
   min-height: 70vh;
-  width: 100%;
   display: flex;
   flex-direction: column; 
   align-items: center;
@@ -20,7 +19,6 @@ const MainS = styled.main<Move>`
   flex: 1;
   width: 100%;
   display: flex;
-  transform: translate3d(${props => props.move},0,0);
   transition: transform .3s ease;
 `
 
