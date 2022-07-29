@@ -28,15 +28,14 @@ const Header = styled.header`
 const Logo = styled.span`
   font: var(--big1);
   align-self: center;
+  color: var(--white);
 
   @media (max-width: 600px) {
     grid-column: 2;
     justify-self: start;
   }
-
 `
 const NavMenu = styled.nav`
-
 
   @media (max-width: 600px) {
     display: none;
@@ -50,7 +49,7 @@ const Ul = styled.ul`
 const Li = styled.li`
 
   a{
-  color: #333;
+  color: var(--white);
   line-height: 3;
   display: inline-block;
   padding: 1rem;
@@ -124,8 +123,6 @@ const Span = styled.span`
   ${props => props.status==true && css`
   opacity: 2;
   transform: initial;
-  
-
   `}
 
   ul{

@@ -15,6 +15,7 @@ const Nav:React.FC = () => {
   }
 
   const html = document.documentElement
+  
   html.addEventListener("click", (e) => {
     e.target == refDrop.current? null : e.target == refDrop.current?.firstChild?null:setStatus(false)
   })

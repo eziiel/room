@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface Props{
   text :string
@@ -7,23 +7,26 @@ interface Props{
   letterspacing? :string
   ch?:number
 }
-interface Move{
-  move :string
-}
-interface CH {
-  ch:number
+
+interface Slide {
+  current:boolean
 }
 
-const Div = styled.div`
-  width: 100%;
+const Div = styled.div<Slide>`
+  position: absolute;
+  width:100%;
+  height: 100%;
   flex-shrink: 0;
-  display: grid;
+  display: none;
   grid-template-columns: 3fr 2fr;
+  
+  ${props => props.current == true && css`
+    display: grid;
+  `}
 
   @media (max-width: 1100px) {
     grid-template-columns: 1fr;
   }
-
 `
 
 const ImgSlide = styled.div<Props>`
@@ -32,7 +35,6 @@ const ImgSlide = styled.div<Props>`
   background: transparent url(${props => props.text}) no-repeat;
   background-size: cover;
   background-position: center;
-  
 `
 
 const Info = styled.article<Props>`
@@ -46,7 +48,6 @@ const Info = styled.article<Props>`
   width: 90%;
   height: 100%;
   padding: ${props => props.padding};
-
   
   @media (max-width: 600px) {
     padding: 5rem 1rem;
@@ -73,7 +74,6 @@ const Info = styled.article<Props>`
   p{
     max-width: 60ch;
   }
-
 `
 
 export {
