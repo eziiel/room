@@ -13,6 +13,10 @@ const Container = styled.div`
   flex-direction: column; 
   align-items: center;
   position: relative;
+  
+  @media (max-width: 600px) {
+    min-height: 95vh;
+  }
   `
 
 const MainS = styled.main<Move>`

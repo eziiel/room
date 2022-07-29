@@ -80,7 +80,7 @@ const Span = styled.span`
   width: 100%;
   height: 3px;
   border-radius: 5px;
-  background-color: #333;
+  background-color: var(--white);
   position: relative;
   
   ::after{
@@ -90,7 +90,7 @@ const Span = styled.span`
     height: 3px;
     top: -10px;
     border-radius: 5px;
-    background-color: #333;
+    background-color: var(--white);
     z-index: 2;
     left: 0;
   }
@@ -102,7 +102,7 @@ const Span = styled.span`
     height: 3px;
     top: 10px;
     border-radius: 5px;
-    background-color: #333;
+    background-color: var(--white);
     z-index: 2;
     left: 0;
   }

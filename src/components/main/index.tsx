@@ -2,7 +2,6 @@ import React, { ComponentElement } from 'react'
 import { Slide } from '../../assets/slide'
 import dataSlide from "../../../public/json/slide.json"
 import * as S from "./styled"
-import { ContextStatus } from '../../context'
 
 
 const Main: React.FC = () => {
