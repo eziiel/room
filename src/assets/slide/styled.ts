@@ -27,6 +27,10 @@ const Div = styled.div<Slide>`
   @media (max-width: 1100px) {
     grid-template-columns: 1fr;
   }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const ImgSlide = styled.div<Props>`
