@@ -19,12 +19,12 @@ const Container = styled.div`
   };
 
   @media (max-width: 600px) {
-    height: 100px;
+    height: 1010px;
   }
-  @media (max-width: 350px) {
-    height: 850px;
+  @media (max-width: 430px) {
+    height: 1050px;
   }
-  `
+`
 
 const MainS = styled.main<Move>`
   flex: 1;
