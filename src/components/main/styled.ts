@@ -14,8 +14,15 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   
+  @media (max-width: 980px) {
+    height: 80vh;
+  };
+
   @media (max-width: 600px) {
-    min-height: 95vh;
+    height: 105vh;
+  }
+  @media (max-width: 350px) {
+    height: 120vh;
   }
   `
 
