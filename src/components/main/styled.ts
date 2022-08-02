@@ -15,14 +15,14 @@ const Container = styled.div`
   position: relative;
   
   @media (max-width: 980px) {
-    height: 80vh;
+    height: 770px;
   };
 
   @media (max-width: 600px) {
-    height: 105vh;
+    height: 100px;
   }
   @media (max-width: 350px) {
-    height: 120vh;
+    height: 850px;
   }
   `
 
@@ -31,6 +31,7 @@ const MainS = styled.main<Move>`
   width: 100%;
   display: flex;
   transition: transform .3s ease;
+  height: 100%;
 `
 
 const NavSlide = styled.div`
